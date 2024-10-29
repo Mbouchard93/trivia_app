@@ -38,7 +38,7 @@
     } else {
       clearInterval(timer);
       saveGameData();
-      screenData.set({ score, total: $questions.length });
+      screenData.set({ score, total: $questions.length, username });
       currentScreen.set("result");
     }
   }
@@ -71,13 +71,13 @@
     resetTimer();
   });
 </script>
-
-<header class="grid h-fit gap-6">
-  <div class="grid grid-cols-2 h-fit">
+<section class="flex flex-col h-screen  px-[25px] ">
+<header class="flex flex-col">
+  <div class="flex justify-between pb-4">
     <h2 class="place-content-end text-[20px]">Question {currentQuestionIndex + 1}/<span class="text-[18px]">{$questions.length}</span></h2>
     <img class="place-self-end " src="/triviascreen.png" alt="">
   </div>
-  <svg  xmlns="http://www.w3.org/2000/svg" width="377" height="2" viewBox="0 0 377 2" fill="none">
+  <svg  xmlns="http://www.w3.org/2000/svg"  width="325" height="2" viewBox="0 0 377 2" fill="none">
     <path d="M0 1H376.5" stroke="#C098DF" stroke-width="0.8" stroke-dasharray="6 6"/>
   </svg>
 </header>
@@ -105,4 +105,4 @@
   <p>reload page</p>
 {/if}
 </main>
-
+</section>

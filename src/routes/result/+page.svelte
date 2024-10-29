@@ -1,6 +1,7 @@
 <script>
   import { screenData, currentScreen } from "$lib/store";
   let score, total;
+  export let data;
 
   screenData.subscribe(data => {
     score = data.score;

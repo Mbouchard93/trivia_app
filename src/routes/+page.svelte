@@ -1,17 +1,17 @@
-<!-- src/routes/+page.svelte -->
 <script>
   import '../app.css';
   import { currentScreen, screenData } from "$lib/store";
-import Acceuil from '../compoment/acceuil.svelte';
-import GameScreen from '../compoment/gameScreen.svelte';
-import ResultScreen from '../compoment/resultScreen.svelte';
-import Settings from '../compoment/settings.svelte';
-import BestScore from '../compoment/bestScore.svelte';
+  
+  import Accueil from './accueil/+page.svelte'
+  import Game from './gameScreen/+page.svelte'
+  import Result from './result/+page.svelte'
+  import Settings from './settings/+page.svelte'
+  import BestScore from './settings/+page.svelte'
 
   const components = {
-      home: Acceuil,
-      gameScreen: GameScreen,
-      resultScreen: ResultScreen,
+      home: Accueil,
+      game: Game,
+      result: Result,
       settings: Settings,
       bestScore: BestScore,
   };

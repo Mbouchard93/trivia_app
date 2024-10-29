@@ -1,8 +1,8 @@
-<!-- src/component/bestScore.svelte -->
 <script>
     import { getUsernames } from "$lib/user.js";
     import { currentScreen } from "$lib/store";
     let usernames = [];
+    export let data;
   
     usernames = getUsernames();
   </script>

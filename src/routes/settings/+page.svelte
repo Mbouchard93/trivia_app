@@ -3,6 +3,7 @@
   import { settingsUrl, selectCategory, difficulty, type, currentScreen } from "$lib/store";
   import { fetchCategories, generateUrl } from "$lib/settings";
   import { writable } from 'svelte/store';
+  export let data;
 
 export const screenData = writable({});
 
@@ -49,7 +50,7 @@ export const screenData = writable({});
   <select id="cat" class="text-black" bind:value={$selectCategory}>
     <option class="text-black" value="">Any Category</option>
     {#each categories as category}
-      <option class="text-black" value={category.id}>{category.name}</option>
+      <option class="text-black w-fit" value={category.id}>{category.name}</option>
     {/each}
   </select>
 

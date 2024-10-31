@@ -6,8 +6,11 @@
   import Game from './gameScreen/+page.svelte'
   import Result from './result/+page.svelte'
   import Settings from './settings/+page.svelte'
-  import BestScore from './settings/+page.svelte'
+  import BestScore from './bestScore/+page.svelte'
 
+  /**
+   * @type {object}
+   */
   const components = {
       home: Accueil,
       game: Game,

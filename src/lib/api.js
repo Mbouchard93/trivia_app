@@ -1,6 +1,10 @@
+/**
+ *
+ * @param {string} url
+ * @returns {Promise<object[]>}
+ */
 export async function getData(url) {
   const response = await fetch(url);
   const data = await response.json();
-  console.log(data.results);
   return data.results;
 }

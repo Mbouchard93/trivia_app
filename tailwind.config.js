@@ -9,7 +9,6 @@ export default {
         withe: "#fff",
         lightestPurple: "#EEE6F3",
         purple: "#C098DF",
-        popPurple: "#6E14B3",
       },
       fontFamily: {
         mono: ["IBM Plex Mono", "monospace"],

@@ -83,9 +83,9 @@
           class="text-black rounded-[0.5rem] p-2"
           bind:value={$difficulty}>
           <option class="text-black" value="">Any Difficulty</option>
-          <option class="text-black" value="easy">Facile</option>
-          <option class="text-black" value="medium">Moyenne</option>
-          <option class="text-black" value="hard">Difficile</option>
+          <option class="text-black" value="easy">Easy</option>
+          <option class="text-black" value="medium">Medium</option>
+          <option class="text-black" value="hard">Hard</option>
         </select>
       </div>
       <div class="flex flex-col w-full gap-1">
